@@ -7,30 +7,55 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="header-bannerPpal">
+        <h1 class="titulo">QUIMICA ORGANICA I Y II</h1>
+    </div>
+    <header>
+        <!--etiqueta nav-->
+        <nav class="nav-container"> <!--menu de navegacion-->
+            <li><a href="index.html">Inicio</a></li>
+            <li><a target="_blank" href="organica_uno.html">Organica I</a></li>
+            <li><a target="_blank" href="organica_dos.html">Organica II</a></li>
+            <li><a href="#">Acerca de nosotros</a></li>
+            <li><a target="_blank" href="contacto.html">Contacto</a></li>
+            <li><a href="#">Buscar</a></li>
+        </nav>
+    </header>
     <form class="formulario"> <!--formulario-->
         <fieldset>
-            <legend>Formulario de consulta</legend>
-            <label for="name">Nombre:</label>
+            <div>
+                <label for="name">Nombre:</label>
             <input type="text" name="name" placeholder="Ingresa tu nombre" required>
+            </div>
             <hr>
-            <label for="apellido">Apellido:</label>
-            <input type="text" name="apellido" placeholder="Ingresa tu apellido" required>
+            <div>
+                <label for="apellido">Apellido:</label>
+                <input type="text" name="apellido" placeholder="Ingresa tu apellido" required>
+            </div>
             <hr>
-            <label for="e-mail">E-mail:</label>
+            <div>
+                <label for="e-mail">E-mail:</label>
             <input type="email" name="e-mail" placeholder="usuario@gmail.com" required>
+            </div>
             <hr>
-            <label for="contacto">Contacto:</label>
+            <div>
+                <label for="contacto">Contacto:</label>
             <input type="number" name="contacto" id="" placeholder="1123456789" required>
+            </div>
             <hr>
-            <label for="cursos">Cursos:</label>
-            <select name="cursos" id="">
-            <option value="">Selecciona el curso</option>
-            <option value="qca_organicaI">Quimica Organica I</option>
-            <option value="qca_organicaII">Quimica Organica II</option>
-            </select>
+            <div>
+                <label for="cursos">Cursos:</label>
+                <select name="cursos" id="">
+                    <option value="">Selecciona el curso</option>
+                    <option value="qca_organicaI">Quimica Organica I</option>
+                    <option value="qca_organicaII">Quimica Organica II</option>
+                </select>
+            </div>
             <hr>
-            <label for="consulta">Consulta (opcional):</label>
-            <textarea name="consulta" id="" cols="30" rows="5" maxlength="500"></textarea>
+            <label for="consulta">Consulta:</label>
+            <div>
+                <textarea name="consulta" id="" cols="30" rows="5" maxlength="500"></textarea>
+            </div>
             <br>
             <input type="submit" value="Enviar" class="button">
         </fieldset>
